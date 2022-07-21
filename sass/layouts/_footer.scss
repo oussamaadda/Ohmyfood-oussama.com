@@ -1,0 +1,28 @@
+footer{
+    @include column;
+    height: 150px;
+    background-color: black;
+    h3{
+        font-size: 2rem;
+        font-family: 'Shrikhand', cursive;
+        color: #fff;
+        margin: 10px 0px;
+    }
+    .foot-info{
+        display: grid;
+        justify-content: center;
+        a{
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            margin: 10px 20px 0px 0px ;
+            i{
+                margin: 0px 10px;
+            }
+            &:hover{
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}

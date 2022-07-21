@@ -1,0 +1,18 @@
+$linear:linear-gradient(to bottom right, #FF79DA, #9356DC);
+$color-primary:#FF79DA;
+$color-secondary:#9356DC;
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@mixin heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+   }

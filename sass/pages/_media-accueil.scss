@@ -1,0 +1,74 @@
+h2{
+    font-size : 21px;
+}
+a{
+    color : #fff;
+}
+
+@media screen and (min-width:700px){
+    body{
+        width: 100%;
+            height: 100%;
+    }
+
+    .fonct{
+        display: grid;
+        
+        .info-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            width: 70%;
+            
+        }
+    }
+    /**RESTAURANTS**/
+    aside{
+        .loging{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:0.5rem;
+            padding:rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+   
+
+    /**FOOTER**/
+    .footer{
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        h3{
+            margin: 10px 0px;
+        }
+        .foot-info{
+            display: flex;
+            a{
+                margin: 10px 40Px;
+            }
+        }
+
+    }
+}
+@media screen and (min-width:1146px){
+    aside{
+        width: 100%;
+        height: 100%;
+        .loging{
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            .card{
+                width: 90%;
+                margin: 2%;
+            }
+        }
+    }
+}

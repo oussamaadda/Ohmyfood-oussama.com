@@ -1,0 +1,126 @@
+$colour-primary    : #9356DC;
+$colour-secondary  : #FF79DA;
+$colour-tertiary   : #99E2D0;
+$color-light-gray : rgb(245,245,245);
+$color-dark-gray  : rgb(236,236,236);
+.menu{
+    margin-top: -50px;
+    padding-bottom: 50px;
+    z-index: 1;
+    position: relative;
+    border-radius: 45px;
+    background-color: $color-light-gray;
+}
+
+.menu__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    
+    
+
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+        font-weight: 300;
+        transition-duration: 1100ms;
+        @media (min-width: 768px){
+            font-size: 40px;
+        }
+    }
+}
+
+.restaurant__heart{
+    @include heart;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.menu__box{
+    @include box-menu;
+    
+    &:active .menu__icon-slide{
+        margin-right: 0;
+        
+        i{
+            animation: turn 500ms;
+        }
+    }
+    @media(min-width: 1100px){
+        &:hover .menu__icon-slide{
+            margin-right: 0;
+            
+            i{
+                animation: turn 500ms;
+            }
+        }
+    }
+}
+
+.menu__box-adjust{
+    height: 80px;
+    @media (min-width: 768px){
+        height: 98.46px;
+    }
+}
+
+.menu__price p{
+    font-weight: 500;
+}
+
+
+.menu__underline{
+    border-bottom: 3px solid $colour-tertiary;
+    margin-bottom: 14.11px;
+    width: 43px;
+
+    h2{
+        margin-bottom: 4px;
+    }
+}
+.menu__appearance1{
+    animation: appearance-box 1s forwards 200ms;
+}
+.menu__appearance2{
+    animation: appearance-box 1s forwards 400ms;
+}
+.menu__appearance3{
+    animation: appearance-box 1s forwards 600ms;
+}
+.menu__appearance4{
+    animation: appearance-box 1s forwards 800ms;
+}
+.menu__appearance5{
+    animation: appearance-box 1s forwards 1100ms;
+}
+.menu__appearance6{
+    animation: appearance-box 1s forwards 1200ms;
+}
+.menu__appearance7{
+    animation: appearance-box 1s forwards 1400ms;
+}
+.menu__appearance8{
+    animation: appearance-box 1s forwards 1500ms;
+}
+.menu__appearance9{
+    animation: appearance-box 1s forwards 1600ms;
+}
+.menu__appearance10{
+    animation: appearance-box 1s forwards 1600ms;
+}
+
+@media (min-width: 1100px){
+    .menu__list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .btn-menu, a{
+            display: grid;
+            align-items: center;
+        }
+    }
+}

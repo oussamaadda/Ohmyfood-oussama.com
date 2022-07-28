@@ -601,5 +601,10 @@ a {
     width: 90%;
     margin: 2%;
   }
+
+  .footer .foot-info a{
+    margin: 0px 50px;
+  }
+
 }
 /*# sourceMappingURL=style2.css.map */

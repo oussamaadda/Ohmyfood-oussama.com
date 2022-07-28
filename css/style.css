@@ -519,7 +519,7 @@ footer {
   align-items: center;
  
   width: 100%;
-  height: 200px;
+  height: 100%;
   background-color: rgb(59, 58, 58);
 }
 
@@ -582,17 +582,20 @@ footer .foot-info a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 150px;
     width: 100%;
   }
   .footer h3 {
-    margin: 10px 0px;
+    margin: 20px 0px;
   }
   .footer .foot-info {
     display: flex;
   }
-  .footer .foot-info a {
-    margin: 10px 40Px;
+  .footer  {
+    margin: 10px 100Px 0px 10px;
+  }
+  .footer .foot-info a{
+    margin: 0px 15px;
   }
 }
 @media screen and (min-width: 1146px) {

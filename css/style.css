@@ -128,6 +128,64 @@ body {
   width: 100%;
 }
 
+.spinner {
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(65, 64, 64, 0.89);
+  -webkit-animation: fade 2000ms forwards;
+          animation: fade 2000ms forwards;
+}
+.spinner__basement {
+  position: fixed;
+  margin: auto;
+  height: 70px;
+  width: 150px;
+  inset: 0;
+  border-bottom: 5px solid #fff;
+  border-radius: 10px;
+  -webkit-animation: rebound 2000ms 65ms;
+          animation: rebound 2000ms 65ms;
+}
+.spinner__plate {
+  position: fixed;
+  margin: auto;
+  height: 50px;
+  width: 200px;
+  inset: 0;
+  border-bottom: 5px solid #fff;
+  border-radius: 10px;
+  -webkit-animation: rebound 2000ms 60ms;
+          animation: rebound 2000ms 60ms;
+}
+.spinner__lid {
+  position: fixed;
+  margin: auto;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  height: 50px;
+  width: 150px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  inset: -20px 0 0 0;
+  -webkit-animation: rebound 2000ms 30ms;
+          animation: rebound 2000ms 30ms;
+}
+.spinner__handle {
+  position: fixed;
+  inset: -100px 0 0 0;
+  margin: auto;
+  height: 10px;
+  width: 20px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  -webkit-animation: rebound 2000ms;
+          animation: rebound 2000ms;
+}
+
+
 header .topnav {
   height: 100%;
   width: 100%;
@@ -236,62 +294,6 @@ header .topnav .title-under p {
   color: #9e9d9d;
 }
 
-.spinner {
-  position: fixed;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  background-color: rgba(65, 64, 64, 0.89);
-  -webkit-animation: fade 2000ms forwards;
-          animation: fade 2000ms forwards;
-}
-.spinner__basement {
-  position: fixed;
-  margin: auto;
-  height: 70px;
-  width: 150px;
-  inset: 0;
-  border-bottom: 5px solid #fff;
-  border-radius: 10px;
-  -webkit-animation: rebound 2000ms 65ms;
-          animation: rebound 2000ms 65ms;
-}
-.spinner__plate {
-  position: fixed;
-  margin: auto;
-  height: 50px;
-  width: 200px;
-  inset: 0;
-  border-bottom: 5px solid #fff;
-  border-radius: 10px;
-  -webkit-animation: rebound 2000ms 60ms;
-          animation: rebound 2000ms 60ms;
-}
-.spinner__lid {
-  position: fixed;
-  margin: auto;
-  border-top: 5px solid #fff;
-  border-left: 5px solid #fff;
-  border-right: 5px solid #fff;
-  height: 50px;
-  width: 150px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  inset: -20px 0 0 0;
-  -webkit-animation: rebound 2000ms 30ms;
-          animation: rebound 2000ms 30ms;
-}
-.spinner__handle {
-  position: fixed;
-  inset: -100px 0 0 0;
-  margin: auto;
-  height: 10px;
-  width: 20px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  -webkit-animation: rebound 2000ms;
-          animation: rebound 2000ms;
-}
 
 
 .btn {
@@ -471,6 +473,11 @@ aside .loging .card .card-img img {
   width: 100%;
   height: 220px;
 }
+
+aside .loging .card .card-box .card_title{
+  margin: 10px 30px;
+}
+
 aside .loging .card .card-img .info {
   position: absolute;
   right: 5%;

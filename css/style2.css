@@ -169,6 +169,7 @@ h2 {
           transition-duration: 1000ms;
 }
 
+
 @media (min-width: 768px) {
   .menu__box {
     margin:10px 0px 10px 20px;
@@ -195,8 +196,8 @@ h2 {
 
 @media (max-width: 768px){
   .menu__box{
-    width: 90%;
-    margin: 10px 10px 0px 20px;
+    width: 95%;
+    margin: 10px 10px 0px 10px;
   }
 }
 

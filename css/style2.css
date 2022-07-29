@@ -171,6 +171,7 @@ h2 {
 
 @media (min-width: 768px) {
   .menu__box {
+    margin:10px 0px 10px 20px;
     height: 75px;
     width: 95%;
   }
@@ -186,8 +187,16 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  
   .menu__box h3 {
     font-size: 18.46px;
+  }
+}
+
+@media (max-width: 768px){
+  .menu__box{
+    width: 90%;
+    margin: 10px 10px 0px 20px;
   }
 }
 
@@ -292,8 +301,7 @@ h2 {
 
 .menu__underline {
   border-bottom: 3px solid #99E2D0;
-  margin-bottom: 14.11px;
-  margin-left: 15px;
+  margin:14.11px 0px 14.11px 25px;
   width: 43px;
 }
 
